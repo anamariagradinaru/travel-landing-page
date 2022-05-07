@@ -1,0 +1,199 @@
+/* global Style  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+h1 {
+  font-size: 20px;
+}
+li,
+button,
+p,
+label,
+input {
+  font-size: 15px;
+}
+h2 {
+  font-size: 27px;
+}
+h3 {
+  font-size: 23px;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 21px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  padding: 2rem 6rem;
+  background: burlywood;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+button:hover {
+  background: rgb(126, 89, 41);
+}
+
+/* Nav section with hero*/
+
+.main-head {
+  background: #131c27;
+  color: white;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#Logo {
+  flex: 2 1 40rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: regular;
+}
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(white, transparent),
+    url("/WorkSpace/project1/pexels-vincent-gerbouin-1174732.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h3 {
+  padding: 5rem;
+}
+
+/* Locations section*/
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(white, transparent),
+    url(/WorkSpace/project1/pexels-thibault-jugain-3992549.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+  padding: 4rem 0rem;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.moving-sun {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  width: 300px;
+  height: 300px;
+  opacity: 0.5;
+}
+.moving-cloud {
+  top: 20%;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+}
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*BENEFITS*/
+.benefits-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+.cards img {
+  height: 100px;
+  background: lemonchiffon;
+}
+
+/*MEDIA QUERY */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #Logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+  }
+}
