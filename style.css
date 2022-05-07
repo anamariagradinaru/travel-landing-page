@@ -79,7 +79,7 @@ nav ul {
 .hero {
   min-height: 90vh;
   background: linear-gradient(white, transparent),
-    url("/WorkSpace/project1/pexels-vincent-gerbouin-1174732.jpg");
+    url(./assets/images/HeroBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -97,7 +97,7 @@ nav ul {
 #locations {
   min-height: 100vh;
   background: linear-gradient(white, transparent),
-    url(/WorkSpace/project1/pexels-thibault-jugain-3992549.jpg);
+    url(./assets/images/LocationsBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
